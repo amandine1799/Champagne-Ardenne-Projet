@@ -1,0 +1,75 @@
+/* Header */
+
+header {
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: 'BallparkWeiner', serif;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0 0 0 20px;
+}
+
+#titre_principal {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Navigation */
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 75px;
+}
+
+nav a {
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+@media screen and (max-width: 900px)
+{
+  nav {
+      width: auto;
+      text-align: left;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav li {
+      padding-left: 4px;
+  }
+
+  nav a {
+      font-size: 1.1em;
+  }
+
+  nav a:hover {
+      border-bottom: 0;
+  }
+}
